@@ -1,0 +1,109 @@
+
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+
+  }
+  
+  #myVideo {
+    position: absolute;
+    padding: 0px;
+    width: 100%; 
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  h1{
+      color: white;
+      font-size: 25px;
+      background-color: rgba(8, 2, 2, 0.268);
+    
+  }
+  h3{
+    color: white;
+    border-bottom: 5px double white;
+    width: 17%;
+  
+}
+h4{
+  font-size: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.165);
+ 
+  border: 1px double rgba(255, 255, 255, 0.124);
+  
+  width: 99%;
+  
+}
+
+  .displayfix{
+      display: flex;
+      justify-content: center;
+      /* flex-wrap: wrap; */
+
+  }
+
+  .itemheader{
+    background-color: rgba(0, 0, 0, 0.33);
+    margin: 40px 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+.itemPanel{
+    background-color: rgba(0, 0, 0, 0.611);
+    margin: 0px 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: 65vh;
+    width: 25%;
+    
+}
+.navbarCustom{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.583);
+    height: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.172);
+    justify-content: center;
+    text-align: center;
+
+}
+.itemNavbar{
+    padding: 2px 40px;
+}
+button{
+  background-color: #19E512;
+  width: 30%;
+  height: 7%;
+  border-radius: 10px;
+  border: 4px outset rgba(255, 255, 255, 0.255);
+  color: white;
+  font-size: 17px;
+ 
+}
+input{
+  border-radius: 10px;
+  height: 25px;
+  border: 2px solid #c2b9b9f7;
+}
+select{
+  border-radius: 10px;
+  height: 25px;
+  border: 2px solid #c2b9b9f7;
+}
+
+  
+  
+  

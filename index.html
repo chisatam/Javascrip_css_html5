@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./CSS/index.css" />
+        <title>EXERCISE FIRST</title>
+        <link rel="icon" href="./image_video/logo2.png">
+    </head>
+
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="image_video/video3.mp4" type="video/mp4" />
+        </video>
+        <!-- <div class="navbarCustom">
+    <div class="itemNavbar"></div> -->
+    
+</div>
+        <div class="displayfix">
+            <div class="itemheader" id="exercise_first">
+                <h1>EXERCISE FIRST  <p style="font-size: 12px; color:white;">product by reefirst program</p></h1>
+            </div>
+        </div>
+        <div class="displayfix">
+            <!-- Body Mass Index (BMI) -->
+            <div class="itemPanel">
+                <div class="h4style"><h4>Body Mass Index (BMI)</h4></div>
+                <a id="label1" style="color: white">weight: </a>
+                <input
+                    id="width_bmi"
+                    name="width_bmi"
+                    type="number"
+                    style="margin-bottom: 20px"
+                />
+                <br />
+
+                <a id="label1" style="color: white">height: </a>
+                <input
+                    id="height_bmi"
+                    name="height_bmi"
+                    type="number"
+                    style="margin-bottom: 20px"
+                />
+                <br />
+
+                <button
+                    id="bbt1"
+                    onclick='Bmicalculate(document.getElementById("width_bmi").value,document.getElementById("height_bmi").value)'
+                >
+                    Calculate
+                </button>
+                <button
+                    id="bbtd1"
+                    onclick='Bmicalculate(document.getElementById("width_bmi").value=0,document.getElementById("height_bmi").value=0)'
+                    style="background-color: red;"
+                >
+                Clear
+                </button>
+
+                <div style="text-align: left; padding-left: 40px; color: white">
+                    <h3>Result</h3>
+                    <a>Body Mass Index :</a>
+                    <a id="resultbmi" style="background-color: #C9840A; font-size: 30px; border-radius: 5px;"></a>
+                </div>
+            </div>
+
+
+            
+             <!-- IBW  -->
+             <div class="itemPanel">
+                <div class="h4style"><h4 >Ideal weight calculator</h4></div>
+                
+                <a id="label1" style="color: white">height: </a>
+                <input
+                    id="height_ibw"
+                    name="height_ibw"
+                    type="number"
+                    style="margin-bottom: 20px"
+                />
+                <br />
+
+                <a id="" style="color: white">Sex:</a>
+                <select
+                    id="sex_ibw"
+                    name="sex_ibw"
+                    style="width: 51%; margin-bottom: 20px; margin-left: 15px;"
+                >
+                    <option value="man">Man</option>
+                    <option value="woman">Woman</option>
+                </select>
+                <br />
+
+                <button
+                    id="bbt3"
+                    onclick='Ibwcalculate(document.getElementById("height_ibw").value,document.getElementById("sex_ibw").value)'
+                >
+                    Calculate
+                </button>
+                <button
+                id="bbtd3"
+                onclick='Ibwcalculate(document.getElementById("height_ibw").value=0,document.getElementById("sex_ibw").value=0)'
+                style="background-color: red;"
+            >
+            Clear
+            </button>
+
+                <div style="text-align: left; padding-left: 40px; color: white">
+                    <h3>Result</h3>
+                    <a>Ideal Body Weight  :</a>
+                    <a id="resultibw"style="background-color: #C9840A; font-size: 30px; border-radius: 5px;"></a>
+                </div>
+            </div>
+
+
+
+            
+
+             <!-- Calorie -->
+             <div class="itemPanel">
+                <div class="h4style">
+                    <h4 >Daily Energy Expenditure(TDEE)</h4>
+                </div>
+                <a id="" style="color: white">weight: </a>
+                <input
+                    id="width_bmr"
+                    name="width_bmr"
+                    type="number"
+                    style="margin-bottom: 20px"
+                />
+                <br />
+
+                <a id="" style="color: white">height: </a>
+                <input
+                    id="height_bmr"
+                    name="height_bmr"
+                    type="number"
+                    style="margin-bottom: 20px"
+                />
+                <br />
+                <a id="" style="color: white">Age: </a>
+                <input
+                    id="age_bmr"
+                    name="age_bmr"
+                    type="number"
+                    style="margin-bottom: 20px; margin-left: 15px;"
+                />
+                <br />
+
+                <a id="" style="color: white">Sex:</a>
+                <select
+                    id="sex_bmr"
+                    name="sex_bmr"
+                    style="width: 51%; margin-bottom: 20px; margin-left: 15px;"
+                >
+                    <option value="man">Man</option>
+                    <option value="woman">Woman</option>
+                </select>
+                <br />
+                <a id="" style="color: white">Activity:</a>
+                <select
+                    id="exerc_bmr"
+                    name="exerc_bmr"
+                    style="width: 51%; margin-bottom: 20px; margin-left: 0px;"
+                >
+                    <option value="1.2">นั่งทำงานอยู่กับที่ และไม่ได้ออกกำลังกายเลย</option>
+                    <option value="1.375">ออกกำลังกายหรือเล่นกีฬาเล็กน้อย ประมาณอาทิตย์ละ 1-3 วัน</option>
+                    <option value="1.55">ออกกำลังกายหรือเล่นกีฬาปานกลาง ประมาณอาทิตย์ละ 3-5 วัน</option>
+                    <option value="1.725">ออกกำลังกายหรือเล่นกีฬาอย่างหนัก ประมาณอาทิตย์ละ 6-7 วัน</option>
+                    <option value="1.9">ออกกำลังกายหรือเล่นกีฬาอย่างหนักทุกวันเช้าเย็น</option>
+                    
+                </select>
+                <br />
+
+                <button
+                    id="bbt2"
+                    onclick='Bmrcalculate(document.getElementById("width_bmr").value,document.getElementById("height_bmr").value,document.getElementById("age_bmr").value,document.getElementById("sex_bmr").value,document.getElementById("exerc_bmr").value)'
+                >
+                    Calculate
+                </button>
+
+                <button
+                    id="bbtd2"
+                    onclick='Bmrcalculate(document.getElementById("width_bmr").value=0,document.getElementById("height_bmr").value=0,document.getElementById("age_bmr").value=0,document.getElementById("sex_bmr").value=0,document.getElementById("exerc_bmr").value=0)'
+                    style="background-color: red;"
+                    >
+                    Clear
+                </button>
+
+                <div style="text-align: left; padding-left: 40px; color: white;margin-top: 20px;">
+                    <a style="border-bottom: 2px double white; margin-right: 10px;">Result</a>
+                    <a>TDEE : </a>
+                    <a id="resultbmr"style="background-color: #C9840A; font-size: 30px; border-radius: 5px;"></a>
+                </div>
+            </div>      
+
+           
+        </div>
+
+        <!-- <div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div> -->
+
+        <script src="mainApp.js"></script>
+        <script src="calculationFormula.js"></script>
+    </body>
+</html>
